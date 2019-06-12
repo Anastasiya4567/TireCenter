@@ -15,14 +15,6 @@ template <typename T> class Workshop
         std::vector<T> vect;
 
     public:
-        ~Workshop()
-        {
-            for( typename std::vector<T>::iterator iter = vect.begin(); iter != vect.end(); ++iter)
-                delete *iter;
-
-            vect.clear();
-            std::cout << "All data deleted.\n";
-        }
         void add(T object)
         {
             vect.push_back(object);
