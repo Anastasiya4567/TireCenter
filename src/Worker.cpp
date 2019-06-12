@@ -19,5 +19,5 @@ Worker::Worker(string name, string sur, string sal)
 
 void Worker::showData()
 {
-    cout << " Name: " <<  name << "\tSurname: " << surname << "\tSalary: " << salary;
+    cout << " Name: " <<  name << "  Surname: " << surname << "  Salary: " << salary;
 }

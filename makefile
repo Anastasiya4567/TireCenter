@@ -26,7 +26,7 @@ tests:
 	@mkdir -p $(BINDIR)
 	@mkdir -p $(BUILDDIR)
 	$(CC) $(CFLAGS) $(INC) -c $(TESTDIR)/class_Car_test.cpp -o $(BUILDDIR)/test.o
-	$(CC) $(BUILDDIR)/test.o $(BUILDDIR)/Car.o -o $(BINDIR)/$(TESTTARGET) -lboost_unit_test_framework
+	$(CC) $(BUILDDIR)/test.o $(BUILDDIR)/Car.o $(BUILDDIR)/Apprentice.o $(BUILDDIR)/Worker.o  -o $(BINDIR)/$(TESTTARGET) -lboost_unit_test_framework
 
 run:
 	./$(TARGET)
